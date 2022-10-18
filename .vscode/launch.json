@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "name": "nodemon",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "restart": true,
+            "runtimeExecutable": "nodemon",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Run Script: test",
+            "request": "launch",
+            "command": "npm run test",
+            "cwd": "${workspaceFolder}"
+        },
+
+        {
+            "version": "0.2.0",
+            "configurations": [
+              {
+                "type": "node",
+                "request": "launch",
+                "name": "Debug App_Name",
+                "skipFiles": [
+                  "./path/of/file/to/skip/when/debugging"
+                ],
+                "program": "app.js",
+                "restart": true,
+                "runtimeExecutable": "nodemon",
+                "console": "integratedTerminal"
+              }
+            ]
+          }
+    ]
+}
